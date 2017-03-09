@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Noodle Lau</title>
+  <title>The Steam Room</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<!--
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <img src="http://www.myiconfinder.com/uploads/iconsets/256-256-d79239b3595aad4dfb399111f56461c6.png" alt="noodle lau logo" style="width:40px;height:40px;"/>
-        <a class="navbar-brand" href="#">Noodle Lau</a>
+        <a class="navbar-brand" href="#">Steam Sum</a>
       </div>
-  
-      <!-- Collect the nav links, forms, and other content for toggling -->
+      
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
@@ -35,8 +34,28 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
+
+
+
+  <div class="page-wrapper">
+  <div class="left-column">
+    <h1 class="restaurant-name">Steam Sum</h1>
+    <ul class="navbar">
+      <li><a href="#"><h6>Home</h6></a></li>
+      <li><a href="#"><h6>Menu</h6></a></li>
+      <li><a href="#"><h6>Location</h6></a></li>
+      <li><a href="#"><h6>Learn More</h6></a></li>
+    </ul>
+  </div>
+  <div class="right-column">
+    
+<!-- yield is here -->
+    <%= yield %>
   
-<%= yield %>
+  </div>
+</div>
+
+
 
 </body>
 </html>
