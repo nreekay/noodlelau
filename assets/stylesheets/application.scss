@@ -24,18 +24,13 @@ html, body {
   margin: 0;
 }
 
-.restaurant-name {
-  color: white;
-}
-
 li h6 {
   color: white;
   font-size: 16px;
 }
 
-.page-wrapper {
-  height: 100%;
-  position: relative;
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Dosis', sans-serif;
 }
 
 .left-column {
@@ -45,6 +40,19 @@ li h6 {
   background:gray;
   width:150px;
   height:100%;
+}
+
+.navbar {
+  margin: 10px;
+}
+
+.page-wrapper {
+  height: 100%;
+  position: relative;
+}
+
+.restaurant-name {
+  color: white;
 }
 
 .right-column {
